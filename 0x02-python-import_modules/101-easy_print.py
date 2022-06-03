@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-print("#pythoniscool")01~
+import print_check_101

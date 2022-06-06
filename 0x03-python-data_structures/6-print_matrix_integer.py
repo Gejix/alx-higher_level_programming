@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-from sqlite3 import Row
-
 
 def print_matrix_integer(matrix=[[]]):
     for rol in range(len(matrix)):

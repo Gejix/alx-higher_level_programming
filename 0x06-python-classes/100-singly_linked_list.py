@@ -31,6 +31,12 @@ class Node:
         self.__next_node = value
 
 
+"""
+M0dule 100-singly_linked_list
+Define class Square
+"""
+
+
 class SinglyLinkedList:
     def __str__(self):
         rtn = ""

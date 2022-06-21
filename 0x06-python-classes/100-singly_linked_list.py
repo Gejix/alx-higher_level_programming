@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""
-M0dule Node
-Define class Square
+""" Working with singly linked list in python
+    Class Node
+    Class SinglyLinkedList
 """
 
 
@@ -29,12 +29,6 @@ class Node:
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
-
-
-"""
-M0dule 100-singly_linked_list
-Define class Square
-"""
 
 
 class SinglyLinkedList:

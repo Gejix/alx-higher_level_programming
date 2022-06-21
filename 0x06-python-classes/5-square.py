@@ -44,7 +44,7 @@ class Square:
             self.__size = value
 
     def my_print(self):
-        """ A Method that prints a number of # squares 
+        """ A Method that prints a number of # squares
         according to the size value given
         """
         if not self.__size:

@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+M0dule 1-square
+Define class Square
+"""
+
+
 class Square:
     """Defines a Class square object.
     Private instance attribute: size.

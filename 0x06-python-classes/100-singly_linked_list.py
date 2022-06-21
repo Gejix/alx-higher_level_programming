@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-M0dule 100-square
+M0dule 100-singly_linked_list
 Define class Square
 """
 

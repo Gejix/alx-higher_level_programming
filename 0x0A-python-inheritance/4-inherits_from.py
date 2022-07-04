@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module 3-is_kind_of_class
+Module 4-inherits_from
 Function that returns True/False if obj is a type of a_class
 """
 

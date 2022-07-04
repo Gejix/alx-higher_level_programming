@@ -14,4 +14,6 @@ class MyList(list):
 
     def print_sorted(self):
         """ Method that prints the sorted list """
-        print(sorted(self))
+        list_cpy = self.copy()
+        list_cpy.sort()
+        print("{}".format(list_cpy))

@@ -6,6 +6,12 @@ using a JSON representation
 
 
 def save_to_json_file(my_obj, filename):
+    """ Function that returns an object by a JSON representation
+    Args:
+        my_obj: object
+    Raises:
+        Exception: when the string can't be decoded
+    """
     import json
 
     with open(filename, 'w') as f:

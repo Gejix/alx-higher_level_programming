@@ -8,6 +8,6 @@ using a JSON representation
 def save_to_json_file(my_obj, filename):
     import json
 
-    with open(filename, 'w') as fd:
+    with open(filename, 'w') as f:
         new = json.dumps(my_obj)
-        fd.write(new)
+        f.write(new)

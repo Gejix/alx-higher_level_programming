@@ -1,4 +1,4 @@
-TESTS FOR 1-my_list.py
+The ``1-my_list`` module
 ============================
 
 Using ``MyList``
@@ -29,6 +29,7 @@ Printing a sorted list 2 (repeated numbers)
     >>> my_list += [2]
     >>> my_list.print_sorted()
     [1, 1, 2, 2, 2]
+
 
 Printing an sorted list 3 (one number)
     >>> my_list = MyList()
@@ -77,7 +78,7 @@ Print_sorted method with 1 passed argument
     >>> my_list = MyList()
     >>> my_list.print_sorted([1, 2, 3])
     Traceback (most recent call last):
-              ...
+    	      ...
     TypeError: print_sorted() takes 1 positional argument but 2 were given
 
 
@@ -85,8 +86,8 @@ Print_sorted method with 2 passed arguments
     >>> my_list = MyList()
     >>> my_list.print_sorted([1, 2], [5, 4])
     Traceback (most recent call last):
-              ...
-TypeError: print_sorted() takes 1 positional argument but 3 were given
+    	      ...
+    TypeError: print_sorted() takes 1 positional argument but 3 were given
 
 
 Type of the print_sorted method

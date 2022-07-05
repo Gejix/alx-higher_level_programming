@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-Module 8-rectangle
-Function that returns the list of available attributes
-and methods of an object
+file: 8-rectangle.py
+Class:
+-> BaseGeometry
+-> Rectangle(BaseGeometry)
 """
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry

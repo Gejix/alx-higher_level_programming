@@ -1,5 +1,5 @@
 -- mysql -u username -p  databasename  < path/example.sql to import tables to database
--- Write a script that displays the average temperature (Fahrenheit) by city
+-- Write a script that displays the average temperature (Fahrenheit) by city.
 -- ordered by temperature (descending)
 SELECT city, AVG(value) as avg_temp FROM temperatures
 GROUP BY city

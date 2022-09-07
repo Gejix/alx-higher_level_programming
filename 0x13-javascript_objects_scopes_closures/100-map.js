@@ -1,6 +1,9 @@
 #!/usr/bin/node
-const list = require('./100-data').list;
-const multiIdx = (value, index) => value * index;
-const newlist = list.map(multiIdx);
-console.log(list);
-console.log(newlist);
+/* import a list */
+const lista = require('./100-data').list;
+
+const mapeado = lista.map((x, index) => {
+  return x * index;
+});
+console.log(lista);
+console.log(mapeado);

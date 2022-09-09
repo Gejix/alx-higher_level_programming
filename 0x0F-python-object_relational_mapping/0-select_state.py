@@ -1,20 +1,21 @@
 #!/usr/bin/python3
 """
-Lists all states from the database hbtn_0e_0_usa
+here we are going to connect to a database and realize a
+query
 """
 import sys
 import MySQLdb
 
-if __name__ == '__main__':
-    db = MySQLdb.connect(
-        user=sys.argv[1],
-        passwd=sys.argv[2],
-        db=sys.argv[3],
-        port=3306,
-        host='localhost')
-    cursor = db.cursor()
-    cursor.execute('SELECT * FROM states ORDER BY states.id ASC;')
 
-    states = cursor.fetchall()
-    for state in states:
-        print(state)
+if __name__ == "__main__":
+    if (len(sys.argv) == 4):
+        db = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
+                             passwd=sys.argv[2], db=sys.argv[3],
+                             charset="utf8")
+        query = db.cursor()
+        query.execute("SELECT * FROM states ORDER BY id ASC")
+        out = query.fetchall()
+        for i in out:
+            print(i)
+        query.close()
+        db.close()

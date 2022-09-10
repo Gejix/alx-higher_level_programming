@@ -1,27 +1,21 @@
 #!/usr/bin/python3
-'''
-script that takes in an argument and displays all values in the states
-'''
-
-import MySQLdb
+"""
+Lists all values in the states tables of a database where name
+matches the argument
+"""
 import sys
+import MySQLdb
 
 if __name__ == '__main__':
-    db = MySQLdb.connect(
-        user=sys.argv[1],
-        passwd=sys.argv[2],
-        db=sys.argv[3],
-        port=3306,
-        host='localhost')
+    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2],
+                         db=sys.argv[3], port=3306)
 
-    cursor = db.cursor()
-    cursor.execute('SELECT * from states\
-                WHERE name LIKE "{}" COLLATE latin1_general_cs\
-                ORDER BY states.id'.format(sys.argv[4]))
+    cur = db.cursor()
+    cur.execute("SELECT * \
+    FROM states \
+    WHERE CONVERT(`name` USING Latin1) \
+    COLLATE Latin1_General_CS = '{}';".format(sys.argv[4]))
+    states = cur.fetchall()
 
-    states = cursor.fetchall()
     for state in states:
         print(state)
-
-    cursor.close()
-    db.close()
